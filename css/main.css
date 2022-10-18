@@ -56,23 +56,24 @@ p {
   list-style: none;
 }
 
+.section-title {
+  font-size: 28px;
+  line-height: 1.2;
+  color: var(--secondary-text-color);
+  text-align: center;
+  margin-bottom: 30px;
+}
 @media screen and (min-width: 1200px) {
   .section-title {
-    color: var(--secondary-text-color);
     font-size: 36px;
-    line-height: 1.2;
-    text-align: center;
     margin-bottom: 50px;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .header {
-    background-color: var(--primary-link-color);
-    border-bottom: 1px solid var(--border-color);
-  }
+.header {
+  background-color: var(--primary-link-color);
+  border-bottom: 1px solid var(--border-color);
 }
-
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -80,6 +81,12 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-height: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .header__container {
+    min-height: 80px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -235,7 +242,7 @@ p {
   background-size: cover;
   background-position: center;
   min-height: 400px;
-  padding: 118px 60px;
+  padding: 118px 0px;
   text-align: center;
 }
 @media screen and (min-width: 1200px) {
@@ -257,6 +264,7 @@ p {
   font-size: 26px;
   line-height: 1.6;
   letter-spacing: 0.06em;
+  width: 360px;
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
@@ -450,13 +458,11 @@ p {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .team {
-    background-color: var(--secondary-background-color);
-    padding: 94px 0px;
-    text-align: center;
-    margin: 0 auto;
-  }
+.team {
+  background-color: var(--secondary-background-color);
+  padding: 94px 0px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 1200px) {
@@ -467,97 +473,94 @@ p {
   }
 }
 
+.team__item {
+  background-color: var(--primary-link-color);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team__item:not(:last-child) {
+  margin-bottom: 30px;
+}
 @media screen and (min-width: 1200px) {
-  .team__item {
-    background-color: var(--primary-link-color);
-    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-  }
   .team__item:not(:last-child) {
     margin-right: 30px;
+    margin-bottom: 0;
   }
 }
 
+.team__container {
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
 @media screen and (min-width: 1200px) {
   .team__container {
-    padding-top: 30px;
     padding-bottom: 30px;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .container__title {
-    color: var(--secondary-text-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.2;
-  }
+.container__title {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
 }
 
-@media screen and (min-width: 1200px) {
-  .container__text {
-    font-size: 16px;
-    line-height: 1.2;
-    margin-top: 10px;
-    margin-bottom: 16px;
-  }
+.container__text {
+  font-size: 16px;
+  line-height: 1.2;
+  margin-top: 10px;
+  margin-bottom: 16px;
 }
 
-@media screen and (min-width: 1200px) {
-  .social-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+.social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-@media screen and (min-width: 1200px) {
-  .social-item a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 44px;
-    height: 44px;
-    background-color: var(--primary-link-color);
-    border-radius: 50%;
-    -webkit-transition-property: background-color;
-    transition-property: background-color;
-    -webkit-transition-duration: 250ms;
-            transition-duration: 250ms;
-    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .social-item:not(:last-child) {
-    margin-right: 10px;
-  }
-  .social-item a:hover, .social-item a:focus {
-    background-color: var(--accent-color);
-  }
-  .social-item a:hover > svg, .social-item a:focus > svg {
-    fill: var(--primary-link-color);
-  }
+.social-item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--primary-link-color);
+  border-radius: 50%;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-item a:hover, .social-item a:focus {
+  background-color: var(--accent-color);
+}
+.social-item a:hover > svg, .social-item a:focus > svg {
+  fill: var(--primary-link-color);
 }
 
-@media screen and (min-width: 1200px) {
-  .social-icon {
-    fill: var(--primary-svg-color);
-    -webkit-transition-property: fill;
-    transition-property: fill;
-    -webkit-transition-duration: 250ms;
-            transition-duration: 250ms;
-    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
+.social-icon {
+  fill: var(--primary-svg-color);
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 1200px) {

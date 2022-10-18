@@ -7,7 +7,7 @@
   background-size: cover;
   background-position: center;
   min-height: 400px;
-  padding: 118px 60px;
+  padding: 118px 0px;
   text-align: center;
 
   @media screen and (min-width: 1200px) {
@@ -28,6 +28,7 @@
   font-size: 26px;
   line-height: 1.6;
   letter-spacing: 0.06em;
+  width: 360px;
 
   @media screen and (min-width: 1200px) {
     width: 696px;

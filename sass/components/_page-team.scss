@@ -1,10 +1,8 @@
 .team {
-  @media screen and (min-width: 1200px) {
-    background-color: var(--secondary-background-color);
-    padding: 94px 0px;
-    text-align: center;
-    margin: 0 auto;
-  }
+  background-color: var(--secondary-background-color);
+  padding: 94px 0px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .team__list {
@@ -14,88 +12,85 @@
 }
 
 .team__item {
-  @media screen and (min-width: 1200px) {
-    background-color: var(--primary-link-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+  background-color: var(--primary-link-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
     &:not(:last-child) {
       margin-right: 30px;
+      margin-bottom: 0;
     }
   }
 }
 
 .team__container {
+  padding-top: 30px;
+  padding-bottom: 24px;
+
   @media screen and (min-width: 1200px) {
-    padding-top: 30px;
     padding-bottom: 30px;
   }
 }
 
 .container__title {
-  @media screen and (min-width: 1200px) {
-    color: var(--secondary-text-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.2;
-  }
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
 }
 
 .container__text {
-  @media screen and (min-width: 1200px) {
-    font-size: 16px;
-    line-height: 1.2;
-    margin-top: 10px;
-    margin-bottom: 16px;
-  }
+  font-size: 16px;
+  line-height: 1.2;
+  margin-top: 10px;
+  margin-bottom: 16px;
 }
 
 .social-list {
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    justify-content: center;
-  }
+  display: flex;
+  justify-content: center;
 }
 
 .social-item {
-  @media screen and (min-width: 1200px) {
-    & a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 44px;
-      height: 44px;
-      background-color: var(--primary-link-color);
-      border-radius: 50%;
+  & a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--primary-link-color);
+    border-radius: 50%;
 
-      transition-property: background-color;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-    &:not(:last-child) {
-      margin-right: 10px;
-    }
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 
-    & a:hover,
-    & a:focus {
-      background-color: var(--accent-color);
-    }
+  & a:hover,
+  & a:focus {
+    background-color: var(--accent-color);
+  }
 
-    & a:hover > svg,
-    & a:focus > svg {
-      fill: var(--primary-link-color);
-    }
+  & a:hover > svg,
+  & a:focus > svg {
+    fill: var(--primary-link-color);
   }
 }
 
 .social-icon {
-  @media screen and (min-width: 1200px) {
-    fill: var(--primary-svg-color);
+  fill: var(--primary-svg-color);
 
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
