@@ -1,4 +1,7 @@
 .specialty {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -6,15 +9,17 @@
 }
 
 .specialty__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--secondary-background-color);
+  border-radius: 4px;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 30px;
+
   @media screen and (min-width: 1200px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--secondary-background-color);
-    border-radius: 4px;
     width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
   }
 }
 
@@ -38,16 +43,20 @@
 }
 
 .specialty__title {
+  text-align: center;
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+
   @media screen and (min-width: 1200px) {
-    color: var(--secondary-text-color);
-    font-size: 14px;
-    line-height: 1.1;
-    text-transform: uppercase;
-    margin-bottom: 10px;
+    text-align: inherit;
   }
 }
 
 .specialty__item:not(:last-child) {
+  margin-bottom: 30px;
   @media screen and (min-width: 1200px) {
     margin-right: 30px;
   }
