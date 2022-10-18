@@ -36,10 +36,14 @@ p {
 }
 
 .container {
-  width: 1200px;
+  max-width: 480px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
 }
 
 .link:hover,
@@ -52,9 +56,11 @@ p {
 }
 
 .section-title {
-  color: var(--secondary-text-color);
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-  margin-bottom: 50px;
+  @media screen and (min-width: 1200px) {
+    color: var(--secondary-text-color);
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 50px;
+  }
 }

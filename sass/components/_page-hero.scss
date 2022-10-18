@@ -1,55 +1,68 @@
 .hero {
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero-bgr.jpg);
-  background-color: var(--primary-background-color);
-  margin: 0 auto;
-  max-width: 1600px;
-  min-height: 600px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-  padding: 200px 0px;
+  max-width: 480px;
+  padding: 118px 0px;
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero-bgr.jpg);
+    background-color: var(--primary-background-color);
+    margin: 0 auto;
+    max-width: 1600px;
+    min-height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 200px 0px;
+  }
 }
 
 .hero__title {
-  width: 696px;
-  color: var(--primary-link-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  margin: inherit;
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    color: var(--primary-link-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: inherit;
+  }
 }
 .hero__btn {
-  display: inline-block;
-  min-width: 216px;
-  background-color: var(--accent-color);
-  color: var(--primary-link-color);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  font-family: inherit;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 32px;
-  margin-top: 30px;
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+    min-width: 216px;
+    background-color: var(--accent-color);
+    color: var(--primary-link-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    font-family: inherit;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 32px;
+    margin-top: 30px;
 
-  transition-property: background-color, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .hero__btn:hover,
 .hero__btn:focus {
-  background-color: var(--primary-link-color);
-  color: var(--accent-color);
+  @media screen and (min-width: 1200px) {
+    background-color: var(--primary-link-color);
+    color: var(--accent-color);
+  }
 }
 
 .hero__btn:active {
-  background-color: var(--button-active-color);
-  color: var(--primary-link-color);
+  @media screen and (min-width: 1200px) {
+    background-color: var(--button-active-color);
+    color: var(--primary-link-color);
+  }
 }
