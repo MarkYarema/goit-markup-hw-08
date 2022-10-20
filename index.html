@@ -46,11 +46,43 @@
             >
           </li>
         </ul>
-        <button type="menu" class="header__button">
-          <svg class="header__menu" width="40px" height="40px">
-            <use href="./images/symbol-defs-contact.svg#icon-menu"></use>
+        <button
+          type="button"
+          class="header__button js-open-menu"
+          aria-expanded="false"
+          aria-controls="modile-menu"
+        >
+          <svg
+            class="header__menu"
+            width="40px"
+            height="40px"
+            aria-label="переключатель мобільного меню"
+          >
+            <use class="icon-menu" href="./images/symbol-defs-contact.svg#icon-menu"></use>
           </svg>
         </button>
+        <div class="menu__container js-menu-container" id="mobile-menu">
+          <button type="button" class="close__bnt js-close-menu">
+            <svg width="40px" height="40px">
+              <use class="icon-close" href="./images/modal-icon.svg#icon-close "></use>
+            </svg>
+          </button>
+          <ul class="header__list mob__list-link list">
+            <li>
+              <a href="./index.html" class="header__link link header__link-current">Студія</a>
+            </li>
+            <li><a href="./portfolio.html" class="header__link link">Портфоліо</a></li>
+            <li><a href="" class="header__link link">Контакти</a></li>
+          </ul>
+          <ul class="info mob__list-info list">
+            <li>
+              <a href="tel:+380961111111" class="info__link link"> +38096 111 11 11</a>
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="info__link link"> info@devstudio.com</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -528,7 +560,13 @@
       </div>
     </div>
 
-    <script src="./js/modal.js"></script>
+    <script
+      defer=""
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
