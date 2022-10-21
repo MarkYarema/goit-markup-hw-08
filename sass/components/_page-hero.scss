@@ -30,6 +30,11 @@
   letter-spacing: 0.06em;
   width: 360px;
 
+  @media screen and (max-width: 479px) {
+    max-width: 270px;
+    font-size: 20px;
+  }
+
   @media screen and (min-width: 1200px) {
     width: 696px;
     font-size: 44px;
