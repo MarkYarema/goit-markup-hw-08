@@ -1,13 +1,24 @@
 .team {
   background-color: var(--secondary-background-color);
-  padding: 94px 0px;
+  padding: 60px 0px;
   text-align: center;
   margin: 0 auto;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
 
 .team__list {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    gap: 0;
   }
 }
 
@@ -21,7 +32,16 @@
     margin-bottom: 30px;
   }
 
+  @media screen and (min-width: 768px) {
+    width: 354px;
+
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
+  }
+
   @media screen and (min-width: 1200px) {
+    width: 270px;
     &:not(:last-child) {
       margin-right: 30px;
       margin-bottom: 0;

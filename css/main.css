@@ -416,6 +416,8 @@ p {
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero-bgr-tab.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-bgr-tab.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -532,11 +534,21 @@ p {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .specialty__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .specialty__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    gap: 0;
   }
 }
 
@@ -568,12 +580,19 @@ p {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .specialty__item {
+    max-width: 354px;
+  }
+}
+
 .specialty__item:not(:last-child) {
   margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .specialty__item:not(:last-child) {
     margin-right: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -639,16 +658,31 @@ p {
 
 .team {
   background-color: var(--secondary-background-color);
-  padding: 94px 0px;
+  padding: 60px 0px;
   text-align: center;
   margin: 0 auto;
 }
-
 @media screen and (min-width: 1200px) {
+  .team {
+    padding: 94px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .team__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    gap: 0;
   }
 }
 
@@ -661,7 +695,18 @@ p {
 .team__item:not(:last-child) {
   margin-bottom: 30px;
 }
+@media screen and (min-width: 768px) {
+  .team__item {
+    width: 354px;
+  }
+  .team__item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+}
 @media screen and (min-width: 1200px) {
+  .team__item {
+    width: 270px;
+  }
   .team__item:not(:last-child) {
     margin-right: 30px;
     margin-bottom: 0;
@@ -769,6 +814,11 @@ p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+@media screen and (min-width: 768x) {
+  .clients__list {
+    gap: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
