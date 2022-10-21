@@ -16,7 +16,7 @@
 }
 
 .header__nav {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
   }
@@ -29,6 +29,10 @@
   line-height: 1.2;
   text-decoration: none;
   margin: 0;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
 
   @media screen and (min-width: 1200px) {
     font-size: 26px;
@@ -53,7 +57,7 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
 
     & li:not(:last-child) {
@@ -80,7 +84,7 @@
     font-size: 24px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     font-size: inherit;
     line-height: 1.1;
 
@@ -94,7 +98,7 @@
 }
 
 .header__link-current::after {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     content: '';
     position: absolute;
     bottom: -1px;
@@ -109,12 +113,35 @@
 .info {
   display: none;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
+    flex-direction: column;
     margin-left: auto;
 
+    & .info__mail {
+      margin-right: 8px;
+      fill: currentColor;
+    }
+
+    & .info__tel {
+      margin-right: 8px;
+      fill: currentColor;
+    }
+
+    & li:first-child {
+      margin-bottom: 12px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+
+    & li:first-child {
+      margin-bottom: 0px;
+    }
+
     & li:not(:last-child) {
-      margin-right: 50px;
+      margin-right: 30px;
     }
 
     & .info__mail {
@@ -132,7 +159,7 @@
 .info__link {
   text-decoration: none;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     color: var(--primary-text-color);
     font-weight: 500;
