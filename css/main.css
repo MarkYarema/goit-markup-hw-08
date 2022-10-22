@@ -695,12 +695,24 @@ p {
 .team__item:not(:last-child) {
   margin-bottom: 30px;
 }
+.team__item img {
+  width: 450px;
+}
+@media screen and (max-width: 479px) {
+  .team__item img {
+    margin: 0 auto;
+    width: 290px;
+  }
+}
 @media screen and (min-width: 768px) {
   .team__item {
     width: 354px;
   }
   .team__item:not(:last-child) {
     margin-bottom: 0px;
+  }
+  .team__item img {
+    width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -710,6 +722,9 @@ p {
   .team__item:not(:last-child) {
     margin-right: 30px;
     margin-bottom: 0;
+  }
+  .team__item img {
+    width: 270px;
   }
 }
 
@@ -804,10 +819,10 @@ p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-.clients__list li:nth-child(odd) {
-  margin-right: 30px;
-  margin-bottom: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
 }
 @media screen and (max-width: 462px) {
   .clients__list {
@@ -820,15 +835,14 @@ p {
   .clients__list {
     gap: 30px;
   }
+  .clients__list > li.clients__style {
+    margin: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .clients__list {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-  }
-  .clients__list li:not(:last-child) {
-    margin-bottom: 0px;
-    margin-right: 30px;
   }
 }
 
@@ -886,11 +900,19 @@ p {
   padding: 60px 0px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .footer-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-container {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -1194,7 +1216,7 @@ p {
 
 .modal {
   width: 450px;
-  height: 610px;
+  height: 100vh;
   background-color: var(--primary-link-color);
   border-radius: 4px;
   padding: 40px;
