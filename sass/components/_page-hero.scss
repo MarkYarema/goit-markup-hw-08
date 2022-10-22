@@ -1,7 +1,7 @@
 .hero {
   max-width: 480px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../../images/hero-bgr-mob.jpg);
+    url(../images/hero-bgr-mob.jpg);
   margin: 0 auto;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,7 +14,7 @@
     max-width: 768px;
 
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../images/hero-bgr-tab.jpg);
+      url(../images/hero-bgr-tab.jpg);
   }
 
   @media screen and (min-width: 1200px) {
